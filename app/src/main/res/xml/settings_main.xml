@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings_title">
+
+    <ListPreference
+        android:title="@string/settings_section_label"
+        android:key="@string/settings_section_key"
+        android:defaultValue="@string/settings_section_technology_value"
+        android:entryValues="@array/settings_category_values"
+        android:entries="@array/settings_category_labels"/>
+
+    <EditTextPreference
+        android:title="@string/settings_page_size_label"
+        android:defaultValue="@string/settings_page_size_default"
+        android:inputType="number"
+        android:hint="@string/edit_text_hint"
+        android:key="@string/settings_page_size_key"/>
+
+</PreferenceScreen>
